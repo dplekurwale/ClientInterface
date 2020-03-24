@@ -1,0 +1,16 @@
+<div class='row'>
+  <div class='col-sm-4 col-sm-offset-4'>
+  	<% if @user.errors.any? %>
+      <div class="alert alert-danger" role="alert">
+        <%= @user.errors.full_messages.join(', ') %>
+      </div>
+    <% end %>
+    <h3>Login</h3>
+    <br/>
+    <%= simple_form_for @user, url: create_session_user_path do |f| %>
+      <%= f.input :username %>
+      <%= f.input :password %>
+      <%= f.button :submit, 'Login' %>
+    <% end %>
+  </div>
+</div>

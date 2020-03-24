@@ -1,0 +1,2595 @@
+Started GET "/" for ::1 at 2020-03-16 03:42:07 +0530
+  
+AbstractController::ActionNotFound (The action 'login' could not be found for UserController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-16 03:42:38 +0530
+Processing by UserController#login as HTML
+Completed 406 Not Acceptable in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UserController#login is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-16 03:42:57 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2096ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `expensive_products_path' for #<#<Class:0x00007f265c598e48>:0x00007f265c5a3320>):
+    14:         <%= menu_item "Home", root_path %>
+    15:         <%= menu_divider %>
+    16:         <%= drop_down "Products" do %>
+    17:             <%= menu_item "Things you can't afford", expensive_products_path %>
+    18:             <%= menu_item "Things that won't suit you anyway", harem_pants_path %>
+    19:             <%= menu_item "Things you're not even cool enough to buy anyway", hipster_products_path %>
+    20:             <% if current_user.lives_in_hackney? %>
+  
+app/views/layouts/application.html.erb:17:in `block (3 levels) in _app_views_layouts_application_html_erb___3131994885058399947_69901367466380'
+app/views/layouts/application.html.erb:16:in `block (2 levels) in _app_views_layouts_application_html_erb___3131994885058399947_69901367466380'
+app/views/layouts/application.html.erb:13:in `block in _app_views_layouts_application_html_erb___3131994885058399947_69901367466380'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3131994885058399947_69901367466380'
+Started GET "/" for ::1 at 2020-03-16 03:43:42 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x00007f265c598e48>:0x00007f265d6e1c68>
+Did you mean?  current_page?):
+    21:         <%= menu_item "Contact", '#' %>
+    22:       <% end %>
+    23:       <%= menu_group pull: :right do %>
+    24:         <% if current_user %>
+    25:           <%= menu_item "Log Out", log_out_path %>
+    26:         <% else %>
+    27:           <%= form_for @user, url: session_path(:user), html => {class: "navbar-form pull-right"} do |f| -%>
+  
+app/views/layouts/application.html.erb:24:in `block (2 levels) in _app_views_layouts_application_html_erb___3131994885058399947_69901376499320'
+app/views/layouts/application.html.erb:23:in `block in _app_views_layouts_application_html_erb___3131994885058399947_69901376499320'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3131994885058399947_69901376499320'
+Started GET "/" for ::1 at 2020-03-16 03:44:24 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:44:26 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:44:27 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:44:28 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:44:29 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:45:11 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 83ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:45:14 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:45:15 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 105ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-16 03:48:54 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-16 03:49:05 +0530
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user/login" for ::1 at 2020-03-16 03:49:37 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-16 03:49:39 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-17 01:04:22 +0530
+  
+ActionController::RoutingError (uninitialized constant UserController):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-17 01:04:47 +0530
+  
+ActionController::RoutingError (uninitialized constant UserController):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-17 01:05:32 +0530
+Processing by UserController#login as HTML
+  Rendering user/login.html.erb within layouts/application
+  Rendered user/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 948ms (Views: 943.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-17 01:12:05 +0530
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user/login" for ::1 at 2020-03-17 01:13:15 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (254.3ms)
+Completed 500 Internal Server Error in 287ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007fa08420bbe8>:0x00007fa08420a0e0>):
+    1: <div class='row'>
+    2:   <div class='col-sm-4 col-sm-offset-4'>
+    3:     <%= simple_form_for @user do |f| %>
+    4:       <%= f.input :username %>
+    5:       <%= f.input :password %>
+    6:       <%= f.button :submit %>
+  
+app/views/users/login.html.erb:3:in `_app_views_users_login_html_erb__1187630727109378522_70163694093420'
+Started GET "/user/login" for ::1 at 2020-03-17 01:14:24 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (147.3ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007fa07c72e5d8>:0x00007fa07c72cb70>
+Did you mean?  user_path):
+    1: <div class='row'>
+    2:   <div class='col-sm-4 col-sm-offset-4'>
+    3:     <%= simple_form_for @user do |f| %>
+    4:       <%= f.input :username %>
+    5:       <%= f.input :password %>
+    6:       <%= f.button :submit %>
+  
+app/views/users/login.html.erb:3:in `_app_views_users_login_html_erb__1187630727109378522_70163629700760'
+Started GET "/user/login" for ::1 at 2020-03-17 01:17:04 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (173.0ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007ff2644904b8>:0x00007ff26449de88>
+Did you mean?  user_path):
+    1: <div class='row'>
+    2:   <div class='col-sm-4 col-sm-offset-4'>
+    3:     <%= simple_form_for @user do |f| %>
+    4:       <%= f.input :username %>
+    5:       <%= f.input :password %>
+    6:       <%= f.button :submit %>
+  
+app/views/users/login.html.erb:3:in `_app_views_users_login_html_erb___1330203900496534223_70339520661700'
+Started GET "/user/login" for ::1 at 2020-03-17 01:17:08 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (137.7ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007ff2644904b8>:0x00007ff2645fdcd8>
+Did you mean?  user_path):
+    1: <div class='row'>
+    2:   <div class='col-sm-4 col-sm-offset-4'>
+    3:     <%= simple_form_for @user do |f| %>
+    4:       <%= f.input :username %>
+    5:       <%= f.input :password %>
+    6:       <%= f.button :submit %>
+  
+app/views/users/login.html.erb:3:in `_app_views_users_login_html_erb___1330203900496534223_70339521409680'
+Started GET "/user/login" for ::1 at 2020-03-17 01:17:40 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (115.5ms)
+Completed 200 OK in 309ms (Views: 307.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-17 01:18:14 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-17 01:18:39 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-17 01:18:50 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-17 01:21:07 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 01:21:08 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 80ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 01:21:38 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 01:21:48 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 01:22:21 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 01:22:25 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-17 01:22:26 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 74ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 01:22:27 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:05:47 +0530
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:06:52 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 283ms (Views: 274.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-17 23:07:15 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1v02ejQ8gUVcLqcOQzvogmyEq4Ucf/aOzo4516a0hH/5meCka+hrVi1mz/e6fd6I/IzayLeXeBEhpR0nxG5OZA==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:9:in `new'
+app/controllers/users_controller.rb:9:in `create_session'
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:11:32 +0530
+Processing by UsersController#sign_up as HTML
+Completed 406 Not Acceptable in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#sign_up is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:11:54 +0530
+Processing by UsersController#sign_up as HTML
+Completed 406 Not Acceptable in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#sign_up is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:12:12 +0530
+Processing by UsersController#sign_up as HTML
+Completed 406 Not Acceptable in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#sign_up is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-17 23:12:17 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (116.8ms)
+Completed 200 OK in 283ms (Views: 274.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:12:20 +0530
+Processing by UsersController#sign_up as HTML
+Completed 406 Not Acceptable in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#sign_up is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:13:55 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (277.6ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_user_path' for #<#<Class:0x000055a9d84e6268>:0x00007f9c803a8f80>
+Did you mean?  create_session_user_path):
+    2:   <div class='col-sm-4 col-sm-offset-4'>
+    3:     <h3>Registration Form</h3>
+    4:     <br/>
+    5:     <%= simple_form_for @user, url: create_user_path do |f| %>
+    6:       <%= f.input :first_name %>
+    7:       <%= f.input :last_name %>
+    8:       <%= f.input :username %>
+  
+app/views/users/sign_up.html.erb:5:in `_app_views_users_sign_up_html_erb___4181411579201323581_70155071463980'
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:14:42 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 288ms (Views: 278.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-17 23:15:08 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mAeOknEZftsQRd+aby4zq5ZFtkXR4bHcpxv++U5kp223Y1hMLs2UyGENt2OWaAWhBk3HCHoJP0NIMNoJLL5tdg==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:17:in `new'
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/user" for ::1 at 2020-03-17 23:16:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mAeOknEZftsQRd+aby4zq5ZFtkXR4bHcpxv++U5kp223Y1hMLs2UyGENt2OWaAWhBk3HCHoJP0NIMNoJLL5tdg==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:17:in `new'
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/user" for ::1 at 2020-03-17 23:17:07 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mAeOknEZftsQRd+aby4zq5ZFtkXR4bHcpxv++U5kp223Y1hMLs2UyGENt2OWaAWhBk3HCHoJP0NIMNoJLL5tdg==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password_confirmation' for User.):
+  
+app/controllers/users_controller.rb:17:in `new'
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/user" for ::1 at 2020-03-17 23:17:49 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mAeOknEZftsQRd+aby4zq5ZFtkXR4bHcpxv++U5kp223Y1hMLs2UyGENt2OWaAWhBk3HCHoJP0NIMNoJLL5tdg==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+URI::InvalidURIError (bad URI(no host provided): http:///user):
+  
+app/controllers/users_controller.rb:19:in `create'
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:23:03 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 268ms (Views: 259.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-17 23:23:19 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTiyEeO2HpmHnB4jGZ4ny+TbMf985WMOXCefcTB9VbKOXGTPvGL0ivbUdtrg2BHBdNNAstcN7ZGzDLuBUqefqQ==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/users_controller.rb:19:in `create'
+Started POST "/user" for ::1 at 2020-03-17 23:26:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTiyEeO2HpmHnB4jGZ4ny+TbMf985WMOXCefcTB9VbKOXGTPvGL0ivbUdtrg2BHBdNNAstcN7ZGzDLuBUqefqQ==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started PUT "/__web_console/repl_sessions/40c4faa9324e32e903a7ef93f143e222" for ::1 at 2020-03-17 23:26:06 +0530
+Started PUT "/__web_console/repl_sessions/40c4faa9324e32e903a7ef93f143e222" for ::1 at 2020-03-17 23:26:13 +0530
+Started PUT "/__web_console/repl_sessions/40c4faa9324e32e903a7ef93f143e222" for ::1 at 2020-03-17 23:26:15 +0530
+Started PUT "/__web_console/repl_sessions/40c4faa9324e32e903a7ef93f143e222" for ::1 at 2020-03-17 23:26:17 +0530
+Started POST "/user" for ::1 at 2020-03-17 23:26:50 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTiyEeO2HpmHnB4jGZ4ny+TbMf985WMOXCefcTB9VbKOXGTPvGL0ivbUdtrg2BHBdNNAstcN7ZGzDLuBUqefqQ==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started POST "/user" for ::1 at 2020-03-17 23:30:37 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTiyEeO2HpmHnB4jGZ4ny+TbMf985WMOXCefcTB9VbKOXGTPvGL0ivbUdtrg2BHBdNNAstcN7ZGzDLuBUqefqQ==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 407256ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-17 23:48:33 +0530
+Processing by HomesController#show as HTML
+Completed 406 Not Acceptable in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (HomesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-17 23:49:19 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 201ms (Views: 198.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-17 23:49:30 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-17 23:49:34 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 45ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-17 23:49:35 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-17 23:49:59 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7SSdniG0MMywiuqmpYDE1OFywCIG2JwI0HI3Tguao2dNChb5jXEd0cLbDQV31yYDvE6z4Hq2nlR2xacxIkRcLw==", "user"=>{"first_name"=>"Dee", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 24548ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/models/user.rb:8:in `create_user'
+app/controllers/users_controller.rb:19:in `create'
+Started POST "/user" for ::1 at 2020-03-17 23:53:18 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c+5vwHsXBCKGl+LMzX2JnXVln341J32TEtff1HUg82RcirkeJMPuMfffijU0O7+X5W3uM57P8wz9/PskF/o5fw==", "user"=>{"first_name"=>"Dee", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 78560ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `site_path' for #<UsersController:0x00007f61103dfb30>
+Did you mean?  user_path):
+  
+app/controllers/users_controller.rb:23:in `create'
+Started POST "/user" for ::1 at 2020-03-17 23:56:36 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c+5vwHsXBCKGl+LMzX2JnXVln341J32TEtff1HUg82RcirkeJMPuMfffijU0O7+X5W3uM57P8wz9/PskF/o5fw==", "user"=>{"first_name"=>"Dee", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 63762ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-17 23:57:40 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 222ms (Views: 219.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:03:57 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c+5vwHsXBCKGl+LMzX2JnXVln341J32TEtff1HUg82RcirkeJMPuMfffijU0O7+X5W3uM57P8wz9/PskF/o5fw==", "user"=>{"first_name"=>"Dee", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 20556ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:04:17 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:04:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c+5vwHsXBCKGl+LMzX2JnXVln341J32TEtff1HUg82RcirkeJMPuMfffijU0O7+X5W3uM57P8wz9/PskF/o5fw==", "user"=>{"first_name"=>"Dee", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 15361ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:04:59 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:05:14 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c+5vwHsXBCKGl+LMzX2JnXVln341J32TEtff1HUg82RcirkeJMPuMfffijU0O7+X5W3uM57P8wz9/PskF/o5fw==", "user"=>{"first_name"=>"Dee", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 57461ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:06:11 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:07:03 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c+5vwHsXBCKGl+LMzX2JnXVln341J32TEtff1HUg82RcirkeJMPuMfffijU0O7+X5W3uM57P8wz9/PskF/o5fw==", "user"=>{"first_name"=>"Dee", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 41780ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:07:44 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:13:52 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:14:07 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eWpr8JRDxOpNxdqLl97yEPj5bhIOWaM1aDFZMoozlhrZROCXOIbp9z+UPShFiRDHpcUd0HI3oWnOhslNo+1pUg==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 389093ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:20:36 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:20:55 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:21:24 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bRUCk6F2vOmZ5uqMOt0EPX/ZnCX9afu0aCoHCxtPNGPNO4n0DbOR9Ou3DS/oiubqIuXv54EH+ejOnZd0MpHLKw==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deepl", "email"=>"dd@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 152ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:21:24 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:22:57 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 91ms (Views: 87.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:23:12 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qxTysO57d3s6bqehuw7fIKyEFHqF6HxAZHIwPD/lO3ILOnnXQr5aZkg/QAJpWT338bhnuPmGfhzCxaBDFjvEOg==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deepl", "email"=>"dd@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 60055ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:24:12 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:26:26 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:26:44 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Gm5t1gCFsy0yPQVien7ga9h4u+OmtDaZOA6J0x8Ad5QRzLQ9Mc70caZE7ZbvhlW8l2RLfL00obCV6pYZaL+lg==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep1", "email"=>"hd@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 27044ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:27:11 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:27:15 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 96ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:27:29 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zA12iBehEMeiqCghdAM9EQQ50q8D/uC7I0y3kA9IJQBsI/3vu2Q92tD5z4KmVN/GWQWhbX+Q4ueF+yfvJpbaSA==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep1", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 60020ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:28:29 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:29:11 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:29:25 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RXYPae9eDhkhDHGoxfBEU3fsF5yvxIBw3m4JEyLv0ZTlWIQOQ5sjBFNdlgsXp6aEKtBkXtOqgix42ZlsCzEu3A==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 5425ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:29:31 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:29:58 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:30:12 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9VxBE//wfOZQJ2vZOQBU+4pKSPqNb2jqyH5kHTmPY5BVcsp0UzVR+yJ2jHrrV7Ys13Y7OPEBarZuyfRiEFGc2A==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 227ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:30:12 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:31:53 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 85ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:32:06 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"opfaVlXr1j0p6XexR4rLuBkcsA6f0rCrcOo0qM2+y/cCuVEx+S77IFu4kBKV3SlvRCDDzOO8svfWXaTX5GA0vw==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deepl", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 404ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:32:06 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:32:29 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 106ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:32:44 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XM1bjGhau+P/cO6orJkDnQD/pxQNYV2RJEsqL5v6AiX849DrxJ+W/o0hCQt+zuFKXcPU1nEPX82C/LpQsiT9bQ==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 591ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:32:44 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:33:09 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:33:19 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5XusYP+6GgNnCEiIxqOZvAdJIe/tsDOweipoj42WbCNFVScHU383HhVZrysU9HtrWnVSLZHeMezcnfjwpEiTaw==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 60047ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:34:20 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:36:26 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 268ms (Views: 255.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:36:42 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiGzitlKqMv+4xf2na+nZ1LeF0FKGIRmIzGRVYwbSKrGDzjtdY+F1oyy8FVP+EWwD+JkgzZ2hjqFhgEqpcW34g==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 86570ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create_user'
+app/models/user.rb:11:in `create_user'
+app/controllers/users_controller.rb:19:in `create'
+Started POST "/user" for ::1 at 2020-03-18 00:38:16 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QPeQWMxhBZgRDfso2cgl6yWbHTNtaiixpKlMgVCL9Whvk0aGk7Xvi2BFk9EgjhPhtZNsfsaCpi5LgmhxMlE/cw==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 295692ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:43:12 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:43:21 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:43:51 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:44:05 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZabDLQ4kDrvILqDvpCb7paW1DOKCzUQsJYJNTr49OwpKwhXzUfDkqLlmyBZdYM2vNb19ryklyrPKqWm+3OfxEQ==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 484ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:44:05 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:45:37 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:45:49 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wbpa5kzNguIAFwk2qWhoPhgmRi5OvjEv/iXomL4QAbD5lNGB4Aiv/3JG7pV7P4rpRRo17DLQM3NYknjnl87++A==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 352ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:45:49 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:47:30 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:47:32 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:47:45 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XfdgQAjXyrzHGiIzVLfYJ9HWK0MiIqFTkzXT0HmCQwf92esnpBLnobVLxZCG4DrwjOpYgV5Mow81gkOvUFy8Tw==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 6915ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:47:52 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 00:48:20 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:48:32 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7IW9/NLuqsHcpi+ve5fbpre6iF9Z3jlSLFLvLmHBkxBMqzabfiuH3K73yAypwDlx6ob7nSWwOw6K5X9RSB9sWA==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep", "email"=>"d@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 70664ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 00:50:12 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KVsE11lJh6sZvGLQtx4lkAN0qO1D/3Iynt73h0IpYAcGP9IJBp1tuGj0CilOWBOak3zZoOgX/K1x9dN3IPOqHA==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"deep1", "email"=>"dd@g.com", "mobile_number"=>"8787878787", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 6923ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 00:50:19 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 00:55:28 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 00:55:34 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CIHDlBoeZBcb7EGVoXmXiCKu8115NfsLv4GKxatUbKZG6YjXVzJPdLpkroMjtekFQALDduvszUexBHSvfESJPw==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create_session' for #<User:0x00007f79147af140 @username="deep1", @password="123">
+Did you mean?  create_user):
+  
+app/controllers/users_controller.rb:10:in `create_session'
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:02:51 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XZkWBY0HJ4LdON1WScG6R4h2zV2O57KAqHlS5nDEaMVy/cDb0tPNkaxwta+wh4xNGH68ECUPPB9HUnYWEh6i3g==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/deepali/deepali/documents/projects/customer_interface/app/models/user.rb:23: syntax error, unexpected ':', expecting '}'
+... JsonWebToken.encode {username: params[:username], password:...
+...                              ^
+/home/deepali/deepali/documents/projects/customer_interface/app/models/user.rb:23: syntax error, unexpected tLABEL, expecting '='
+...e: params[:username], password: params[:password]}
+...                      ^~~~~~~~~
+/home/deepali/deepali/documents/projects/customer_interface/app/models/user.rb:23: syntax error, unexpected '}', expecting end
+...], password: params[:password]}
+...                              ^):
+  
+app/models/user.rb:23: syntax error, unexpected ':', expecting '}'
+app/models/user.rb:23: syntax error, unexpected tLABEL, expecting '='
+app/models/user.rb:23: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:9:in `create_session'
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:03:24 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XZkWBY0HJ4LdON1WScG6R4h2zV2O57KAqHlS5nDEaMVy/cDb0tPNkaxwta+wh4xNGH68ECUPPB9HUnYWEh6i3g==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 366ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:04:15 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zqdv0wDWebjkhfGyDQMLfcTxyC/piwQq69hOEaOOa1BJw7kNXwKTq5XNmUv0RT13VPm5YkJjirUE82rhwVShSw==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 29851ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:05:02 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ii7i/G6xGvOuD6cDzUaWmx8WDpO+sSXYRFl29KhICBylSjQiMWXw4N9Hz/o0AKCRjx5/3hVZq0erclIEypLCBw==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 60151ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:09:32 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ct9xtExbjIkq1N46Qq1lvV+JqA2lCfDs3uR7i13s6AVdu6dqE49mmluctsO761O3z4HZQA7hfnMxz197PzYiHg==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6170ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/create_session" for ::1 at 2020-03-18 01:14:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/user/create_session"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-18 01:14:56 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:14:59 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 88ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:15:06 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RzMcT6gLFpstbcsOgNm4J3XT5LNIKntf7Vo2xPcATbwJW1cM5Sc9+IzlJBgCFcaqF3/UmNrzTRPj38iuIBCoJQ==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 525ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:15:12 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fAL1/NVQiF+XsCphzMdfLbVwHODGjagvYWtGU29iOOBTZiMiioRiTOb4Qpg1gWknJXhtrW1lJrCOQGKjDbjy+w==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 469ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:15:19 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LHJ7M0ut7G+Xh8NE7Mm+g1jxFsbx6t0sj74CP9EPqZEDFq3tFHkGfObPq70Vj4iJyPlni1oCU7NglSbPs9Vjig==", "user"=>{"username"=>"deep", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 461ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:16:04 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxPHxXH9nX8s1Wg1tchoLPcke5r6988hBNdyRwyeF52AdxEbLil3bF2dAMxMjl4mZywK11EfQb7r/Fa3bkTdhg==", "user"=>{"username"=>"deep", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18310ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:17:04 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:17:07 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 99ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:17:48 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pq+F/Dgx7oU3UfbWD88OkGhrrrqpOxvWfko3jsO9/++Jy1MiZ+UElkYZni/2iTia+GPf9wLTlUmRYRN+oWc19A==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7863ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:18:03 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:18:09 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8VKAEPrrRyfbgipDsGYgRAbFKGyM4j0SagGjaS7ZBa2/OstTt8dsRHoKxVUyql7JZGkYRx47C15khF0D+cngNA==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29110ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:19:22 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:19:28 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"44S3bFOkUxB/NqwUTEOVOmgQiiCe0ZkBDX2h4YEmcaat7PwvHoh4c96+QwLOj+u3Cry6CwwIr00D+F+LVjaUPw==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 64109ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:20:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user" for ::1 at 2020-03-18 01:21:21 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-18 01:21:25 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:21:27 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 68ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:21:35 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XE2iDFBiUHw0wzlOptubP0izir79oj597TzyE9km8TUSJelPHU57H5VL1lgkF+WyKh+6lW97CDHjuQx5DjYUrA==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 43974ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:22:19 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:22:22 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:22:27 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hf+EmJPmUN08RhAedr25Q5oczwoIVmOoR6bNPIUGCptTl8/b3sp7vp3O/wj0ccfO+LD/IZqPVeRJIzNWUhbvAg==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 60147ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:24:09 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rv43BLM7WzNHKclMgkKTQP4knSEfdonxwYugMG8VBK9pmuHa7O+xIDZhobV7BKVKbizsbLSeB24uoITADc/OtA==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 22078ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:24:31 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:25:10 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:25:15 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FJvrHGDqsdSyxqH9V62lJJM6jPYSoTy+pQubBkdsB1Ja86BfLcaatxNOTuvVYdup8Za83YB4CvKrjmVskHziyw==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 118305ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:27:13 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 85ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:27:17 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:27:24 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f5qfdJ1Q2++40rbvRBDoNDEBIbvn1X6OUsRbR45Og7Ax8tQ30HzwjBlaWfnG3Ja5U60RkHUMSMJcQaUtWV5mKQ==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 72393ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:28:37 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:28:40 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:28:45 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9MwJCmcFznGIkRvaVcdFYDav1GZ3sJCjvDXjt0zpQ6+6pEJJKinlEikZ9MzXCzvtVAPkTeVppu+ysB3dm/mmNg==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 75996ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:30:01 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:30:04 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:30:10 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mNfRmRq3Cd4e/RHcr+qjV0AFzVZjR+Ju/87JtWO2Ba4CxQFKUb3RNnzG1Hwc9QAP6wnHstUKcW1esVMAp49jw==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 247134ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:34:17 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:34:20 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:34:27 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kGJ2C9dahMnlPMBWUSnjP/AIuS3v2qv5YNpfccTNCmoKcKbYnFBcIYcHBfbiNkBnWwSzyVmXOPrBpcXEAPRsA==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 121473ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:36:29 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:36:44 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 257ms (Views: 247.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:36:49 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xlTG/wCgyk/0WdUl8y1nLzyEFNFK/RbgWlx0Dy27TmGIPI28TYzhLFXROjNx4RmiXigk+tgkIKxU2Ypl+qur+A==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 17918ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:37:07 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:37:17 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:37:22 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L8OmnqxYYqfbe38IO5Wxq2XFrGHGMHmHg6AYO6P55h1hq+3d4XRJxHrzkB65Wc8mB2mcSlTpT8uNJeZRdOkDhA==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 214628ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:40:57 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:40:59 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:41:04 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rCZ524f/YRX1oDFvvXVQbOE5BvY07rKkv/6JffeyjILiTjKYytNKdlQo3nk/uS7hg5U23aY3hOixe3cXIKJpGw==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 23670ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:41:28 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:42:04 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:42:09 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6q06W9fj4gQukXS5QL1J8CA44eOPESgVb3ejZPlUERekxXEYms/JZ48Zm6/CcTd9QpTRyB3IHllh8l0OLkT0jg==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 94207ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:43:43 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 01:43:46 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:43:51 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V9Flaw/qWdaDcUt6T9nC46IakF808WCzV5gRqVp2y7EZuS4oQsZytSL5pGzNFbxuwLagdKYoVv9ZHe/DjWYuKA==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 596ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `sessions' for #<UsersController:0x00007fecc47f1878>
+Did you mean?  session):
+  
+app/controllers/users_controller.rb:14:in `create_session'
+Started POST "/user/create_session" for ::1 at 2020-03-18 01:44:02 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V9Flaw/qWdaDcUt6T9nC46IakF808WCzV5gRqVp2y7EZuS4oQsZytSL5pGzNFbxuwLagdKYoVv9ZHe/DjWYuKA==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 333ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:44:03 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19364ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:48:25 +0530
+Processing by UsersController#show as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `get_user_details' for User:Class):
+  
+app/controllers/users_controller.rb:30:in `show'
+Started GET "/user" for ::1 at 2020-03-18 01:48:40 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 126ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:49:24 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 136ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:49:44 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 139ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:50:01 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 158ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 01:51:14 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 137ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:02:09 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 253ms (Views: 239.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/logout" for ::1 at 2020-03-18 02:02:12 +0530
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3001/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 02:02:12 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 02:02:16 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 02:02:21 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GLklL9x1CY1r6jYHa1vTIOsSW1cqGmXsrpQMV13xKDBW0W5skVki7spi2RHpl62tib5rfLjDU6CgEfI9iuHNqQ==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 589ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:11:in `create_session'
+Started POST "/user/create_session" for ::1 at 2020-03-18 02:03:08 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5f2ST/CJk8oSjJM8aG9u98btgDZJFu56e48qicTncz3KmUSRr1152WPE+8WRKVj9VuXxe+L+YOWUpA55pj25Jg==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 327ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:11:in `create_session'
+Started POST "/user/create_session" for ::1 at 2020-03-18 02:03:24 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5f2ST/CJk8oSjJM8aG9u98btgDZJFu56e48qicTncz3KmUSRr1152WPE+8WRKVj9VuXxe+L+YOWUpA55pj25Jg==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 7104ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:11:in `create_session'
+Started POST "/user/create_session" for ::1 at 2020-03-18 02:03:52 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5f2ST/CJk8oSjJM8aG9u98btgDZJFu56e48qicTncz3KmUSRr1152WPE+8WRKVj9VuXxe+L+YOWUpA55pj25Jg==", "user"=>{"username"=>"deep1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 9697ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:04:02 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:04:35 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (7229.2ms)
+Completed 200 OK in 7321ms (Views: 7316.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:05:29 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (5699.0ms)
+Completed 200 OK in 5798ms (Views: 5794.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:05:51 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (12186.6ms)
+Completed 200 OK in 12251ms (Views: 12243.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:06:07 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (75783.8ms)
+Started GET "/user" for ::1 at 2020-03-18 02:07:23 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (664.0ms)
+Completed 200 OK in 76683ms (Views: 76678.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 870ms (Views: 863.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:07:27 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (64197.7ms)
+Completed 200 OK in 73590ms (Views: 64245.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:08:44 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1134.5ms)
+Completed 200 OK in 246521ms (Views: 1208.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:12:56 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (13770.5ms)
+Completed 200 OK in 17114ms (Views: 13825.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:15:28 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:16:08 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:16:23 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 50ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:16:34 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:17:02 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:17:14 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:17:41 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/logout" for ::1 at 2020-03-18 02:18:09 +0530
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3001/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 02:18:09 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 02:18:10 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 02:18:41 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k52AZ/TLT1Rl9OCD8130bCTncN1tHGEAH3kJgPxvyh8zswsAWA5iSRelByAhCha7edsDHxFyY1y5zpn/1bE1Vw==", "user"=>{"first_name"=>"Deepali ", "last_name"=>"Lekurwale", "username"=>"dplekurwale", "email"=>"dplekurwale@gmail.com", "mobile_number"=>"9876567556", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 443ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 02:18:41 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 02:18:44 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 02:18:50 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hKPBm+pK/rWH+6BScC5zIspbKjVdgLC8s28pw3Q8fLjKy4rYp2bV1iZzT0Ty4g2vqPcaHs9ZhvC96tepoyyZIQ==", "user"=>{"username"=>"dplekurwale", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 356ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:18:50 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/logout" for ::1 at 2020-03-18 02:19:14 +0530
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3001/home
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 02:19:14 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 02:19:16 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 02:19:32 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ero0ro02NGBfcoUBEqL1LBRLtO6a+vcVeW8u9WGqLSCylL/JIfMZfS0jYqLA9Rf7SXfHLOaU9Unf2L6KSHTSaA==", "user"=>{"first_name"=>"Deep", "last_name"=>"Lekurwale", "username"=>"dplekurwale", "email"=>"dplekurwale@gmail.com", "mobile_number"=>"9876567556", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 342ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 02:19:32 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 02:19:35 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 02:21:17 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XWkRwQvSGIUXfW/hnGSyrcxvc8rHAb95xSEKYZavodT9R5qmpxc1mGUsiEJOM1B6kVMACLtvvSVjlpoev3FenA==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"dplekurwale", "email"=>"dplekurwale@gmail.com", "mobile_number"=>"9876567556", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 362ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 02:22:15 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+cGKStsqg0HleGyoyHsKqkRvBkCGGA4M0kba3IDDMFvWpVyUhP5pUpQwBFExPTyg1Gd3DS3wgJM9bf4s4hn6QA==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"dplekurwale", "email"=>"dplekurwale@gmail.com", "mobile_number"=>"9876567556", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 97703ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 02:25:28 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QhM35nVV19JyEo+ckIS4TMAbLlwaqNRVNdSjeWXeg6Ntd+E4KoE9wQNa52Vpwo5GUBNfEbFAWsra/4eJBwRJuA==", "user"=>{"first_name"=>"Deep", "last_name"=>"L", "username"=>"dplekurwale", "email"=>"dplekurwale@gmail.com", "mobile_number"=>"9876567556", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 153ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 02:25:28 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 02:26:28 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 02:26:45 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CuqYELN5PHybfB+S13QUhPqi/EShHwfmP3ENN0MnFqiqxBN3H7wRYekt+DEFI/ZTp56Pht1xBbqZxp1Iavnp4A==", "user"=>{"first_name"=>"Deep", "last_name"=>"Lekurwale", "username"=>"deep1", "email"=>"d@g.com", "mobile_number"=>"9876567556", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 437ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2020-03-18 02:26:59 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"450tfPx2ft9mqA/ErPwYlWiuinYqdhfwAJVyarbzkV7M+fuio6KUzBfgZz1Vui6f+Kb7O4GemW/vvlaa1ClbRQ==", "user"=>{"first_name"=>"Deep", "last_name"=>"Lekurwale", "username"=>"deep11", "email"=>"d1@g.com", "mobile_number"=>"9876567556", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3001/home
+Completed 302 Found in 424ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2020-03-18 02:26:59 +0530
+Processing by HomesController#show as HTML
+  Rendering homes/show.html.erb within layouts/application
+  Rendered homes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_up" for ::1 at 2020-03-18 02:27:01 +0530
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for ::1 at 2020-03-18 02:27:03 +0530
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 83ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/create_session" for ::1 at 2020-03-18 02:27:08 +0530
+Processing by UsersController#create_session as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pyEODIzlwEj/5fM+idl/B4JVoybYcgoD9A7DCgTlViPpSUVPwcnrK15tHCgLFQGK4PmTDUqrPE/6iz1g0/Wzug==", "user"=>{"username"=>"deep11", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3001/user
+Completed 302 Found in 360ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2020-03-18 02:27:08 +0530
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
